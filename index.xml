@@ -6,10 +6,19 @@
     <description>Recent content on Yet Another Programming Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2019 14:00:13 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 01:10:57 -0300</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Getting Started With Programming</title>
+      <link>http://example.org/getting-started-with-programming/</link>
+      <pubDate>Sun, 28 Jul 2019 01:10:57 -0300</pubDate>
+      
+      <guid>http://example.org/getting-started-with-programming/</guid>
+      <description> template </description>
+    </item>
     
     <item>
       <title>About me</title>
