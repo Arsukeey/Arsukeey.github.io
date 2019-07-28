@@ -6,9 +6,31 @@
     <description>Recent content on Blog de programação de Lucas Micheloni</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 28 Jul 2019 01:10:57 -0300</lastBuildDate>
     
 	<atom:link href="https://arsukeey.github.io/pt/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aprendendo a programar</title>
+      <link>https://arsukeey.github.io/pt/come%C3%A7ando-com-programa%C3%A7%C3%A3o/</link>
+      <pubDate>Sun, 28 Jul 2019 01:10:57 -0300</pubDate>
+      
+      <guid>https://arsukeey.github.io/pt/come%C3%A7ando-com-programa%C3%A7%C3%A3o/</guid>
+      <description>A Luta Talvez você já tenha escrito alguma coisinha em C++ ou BASIC, mas tá na hora de botar a mão na massa e aprender como fazer as coisas para o mundo real, e do jeito certo.
+Quando você está começando a programar, você pode ficar confuso com qual linguagem de programação você deve aprender (mesmo que você sequer tenha certeza do que elas se tratam).
+Então eu vou te dar uma ajuda.</description>
+    </item>
+    
+    <item>
+      <title>Sobre mim</title>
+      <link>https://arsukeey.github.io/pt/about/</link>
+      <pubDate>Sun, 28 Jul 2019 01:10:57 -0300</pubDate>
+      
+      <guid>https://arsukeey.github.io/pt/about/</guid>
+      <description>Então. Primeiro post no blog. Sou um estudante que ama tecnologia (eu sei o quão genérico isso soa) que mora no Brasil.
+Comecei a programar quando tinha 13 anos, quando tive meu primeiro contato com o Linux, com um Raspberry Pi. Então, algum tempo depois, eu queria fazer algumas coisas com o GPIO, então aprendi Python (que ainda é minha melhor linguagem). Mas eu ainda não estava confiante com minhas habilidades de programação, então comecei a aprender C# com a ajuda do YouTube.</description>
+    </item>
     
   </channel>
 </rss>
