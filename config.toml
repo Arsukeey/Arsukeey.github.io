@@ -1,0 +1,26 @@
+baseURL = "http://example.org/"
+DefaultContentLanguage = "en"
+languageCode = "en-us"
+theme = "tale"
+
+[languages]
+    [languages.en]
+        title = "Yet Another Programming Blog"
+    [languages.pt]
+        title = "Blog de programação de Lucas Micheloni"
+
+[Author]
+    name = "Lucas Micheloni"
+
+[params.highlight]
+languages = ["armasm", "c", "diff", "llvm", "rust", "shell"]
+style = "github"
+theme = "tomorrow-night"
+
+[[params.social]]
+fa_icon = "fa-github"
+url = "https://github.com/japaric"
+
+[[params.social]]
+fa_icon = "fa-twitter"
+url = "https://twitter.com/japaricious"
