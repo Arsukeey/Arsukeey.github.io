@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://arsukeey.github.io"
 DefaultContentLanguage = "en"
 languageCode = "en-us"
 theme = "tale"
