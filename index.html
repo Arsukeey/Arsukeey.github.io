@@ -1,252 +1,78 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+	<meta name="generator" content="Hugo 0.55.6" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="">
 
-<head>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
-    
-    <title>Welcome to my website!</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-        @import url('https://fonts.googleapis.com/css?family=Lato');
+		<title>
+				Yet Another Programming Blog
+		</title>
 
-        html {
-            background-size: 100% 100%;
-            background-color: lightgray;
-        }
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-        h2 {
-            font-family: 'Lato', sans-serif;
-            font-size: 45px;
+		
+		<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Yet Another Programming Blog" />
+	</head>
 
-            color: #87b4ff;
-            text-align: center;
-            left: 50%;
-            top: 200px;
-        }
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Yet Another Programming Blog</h2>
+				</a>
+				<ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/">Posts</a></li>
+</ul>
+			</div>
+		</nav>
 
-        h4 {
-            color: white;
-            text-align: center;
-            left: 50%;
-            top: 200px;
-        }
+        
 
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background: lightgray;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .toggle {
-            text-decoration: none;
-            font-size: 2em;
-            color: rgba(0, 0, 0, 0.61);
-            -webkit-transition: all 0.15s ease-out 0;
-            -moz-transition: all 0.15s ease-out 0;
-            transition: all 0.45s ease-out 0;
-            position: fixed;
-            top: 20px;
-            left: 30px;
-            z-index: 1;
-            cursor: pointer;
-        }
-
-        .sidebar {
-            position: fixed;
-            top: 0px;
-            bottom: 0px;
-            left: -250px;
-            -webkit-transition: all 0.15s ease-out 0;
-            -moz-transition: all 0.15s ease-out 0;
-            transition: all 0.15s ease-out 0;
-            width: 15rem;
-            
-
-            background: #19C4BC;
-            -webkit-transition: width .05s linear;
-            transition: width .05s linear;
-            -webkit-transform: translateZ(0)
-        }
-
-        .sidebar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-
-        .sidebar li a {
-            color: #fff;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 1.1em;
-            margin: 0;
-            margin-bottom: 16px;
-            cursor: pointer;
-            text-decoration: none;
-            line-height: 200%;
-            margin-left: 10px;
-        }
-
-        .sidebar a:hover {
-            color: rgba(0, 0, 0, 0.61);
-        }
-
-        #slide:checked+.container .sidebar {
-            left: 0px;
-        }
-
-        #slide:checked+.container .toggle {
-            left: 200px;
-        }
+<main>
+	
 
 
-        #slide {
-            display: none;
-        }
+	<div class="catalogue">
+		
+			<a href="http://example.org/about/" class="catalogue-item">
+    <div>
+        <time datetime="2019-07-22 14:00:13 -0300 -03" class="catalogue-time">July 22, 2019</time>
+        <h1 class="catalogue-title">About me</h1>
+        <div class="catalogue-line"></div>
 
-        .media {
-            position: fixed;
-            top: 0px;
-            bottom: 0px;
-            left: -190px;
-            -webkit-transition: all 0.15s ease-out 0;
-            -moz-transition: all 0.15s ease-out 0;
-            transition: all 0.15s ease-out 0;
-            width: 8rem;
-            padding: 1.5em;
-            background: #19C4BC;
-        }
-
-        #rect {
-            border-radius: 25px;
-            background: #f4403d;
-
-            width: 450px;
-            height: 200px;
-
-            position: absolute;
-            left: 40%;
-            top: 20%;
-        }
-
-        .fa-align-left {
-            width: 50px;
-            height: 50px;
-            color: purple;
-            float: left;
-
-
-            left: 20px;
-            display: flex;
-            border-radius: 70px;
-            justify-content: center;
-            align-items: center;
-
-            transition: 0.4s;
-        }
-
-
-        .social {
-            width: 450px;
-            height: 80px;
-
-            background: white;
-            border-radius: 25px;
-            position: absolute;
-
-            left: 40%;
-            top: 60%;
-        }
-
-        .fa-github {
-            top: 30%;
-            left: 30px;
-            position: absolute;
-        }
-
-        #column {
-            position: absolute;
-            background: lightgray;
-
-            width: 5px;
-            height: 50px;
-
-            top: 15px;
-            left: 80px;
-        }
-
-        h3 {
-            position: relative;
-            left: 100px;
-            top: 5px;
-            margin: 0%;
-
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            font-size: 2em;
-        }
-    </style>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    -->
-
-    <meta charset="utf-8">
-
-</head>
-
-<body>
-
-    <div id="rect">
-        <h2>Welcome!</h2>
-        <h4>See some of my projects on the left! <br><br> Follow me on github!</h4>
-
+        <p>
+            So. First blog post. Let&rsquo;s get the boring part out of the way, I&rsquo;m a highschooler that loves tech (I know how generic that sound) living in Brazil.
+I started programming when I was 13 years old, when I had my first contact with Linux, with a Raspberry Pi. Then, some time later, I wanted to do some things with GPIO so I introduced myself to Python (which is still my best language).
+        </p>
     </div>
+</a>
 
-    <input type="checkbox" id="slide" name="" value="" />
-    <div class="container">
-        <label for="slide" class="toggle">☰</label>
-        <nav class="sidebar">
-            <ul>
-                <li><br><br><br>
-                    <a href="flappyBird/flappyBird.html" target="_blank">Flappy Bird</a> on JavaScript + p5.js
-                </li>
-                <li style="position: absolute; top: 100px;"><br />
-                    <a href="tsp/tsp_random.html" target="_blank">Random Traveling Salesman Person</a>
-                </li>
-                <li style="position: absolute; top: 200px;"><br />
-                    <a href="tsp/lexical_tsp.html" target="_blank">Lexical Traveling Salesman Person</a>
-                </li>
-                <li style="position: absolute; top: 300px;"><br />
-                    <a href="hunttw/hunttw.html">Hunt the Wumpus</a>
-                </li>
-                <li style="position: absolute; top: 400px;"><br />
-                    <a href="pong-wasm/pong.html">Pong in WASM (C++)</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+		
+	</div>
+	
+	<div class="pagination">
+		
+		
+	
+		<span>1</span>
+	</div>
+</main>
 
 
+        		<footer>
+			<span>
+			&copy; <time datetime="2019-07-28 01:06:15.697466371 -0300 -03 m=&#43;0.083790764">2019</time> Lucas Micheloni. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
 
-    <div class="social">
-
-        <a href="https://github.com/Arsukeey" target="_blank"> <i class="fab fa-github fa-2x"></i></a>
-        <div id="column">
-            <h3>
-                Arsukeey
-            </h3>
-        </div>
-    </div>
-
-</body>
-
+    </body>
 </html>
