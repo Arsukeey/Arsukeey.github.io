@@ -6,10 +6,22 @@
     <description>Recent content on Yet Another Programming Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 01:10:57 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 10 Aug 2019 01:10:57 -0300</lastBuildDate>
     
 	<atom:link href="https://arsukeey.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Monads</title>
+      <link>https://arsukeey.github.io/monads/</link>
+      <pubDate>Sat, 10 Aug 2019 01:10:57 -0300</pubDate>
+      
+      <guid>https://arsukeey.github.io/monads/</guid>
+      <description>This is my shot at explaining monads. If I say something that&amp;rsquo;s not true, I encourage to send me an email correcting me.
+Monads are objects that may or may not return a value. Putting it in simple terms, monads means something can return either a value or nothing, or an arbitrary number of values.
+For example, using JavaScript:
+function monad(x) { if (x &amp;gt; 5) { return x; } return null; }  monad() can return null or x, depending on the argument it receives.</description>
+    </item>
     
     <item>
       <title>Getting started with Programming</title>
