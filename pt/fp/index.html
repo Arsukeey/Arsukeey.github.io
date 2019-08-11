@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				Programação Funcional &middot; Blog de programação de Lucas Micheloni
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Blog de programação de Lucas Micheloni" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Blog de programação de Lucas Micheloni</h2>
+				</a>
+				<ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/">Posts</a></li>
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Lucas Micheloni
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-08-10 01:10:57 -0300 -03">August 10, 2019</time>
+</div>
+		<h1 class="post-title">Programação Funcional</h1>
+<div class="post-line"></div>
+
+		
+
+		
+
+<h2 id="essa-é-uma-breve-introdução-à-programação-funcional-que-por-acaso-usa-elixir-para-exemplos-mas-você-não-precisa-saber-elixir-para-os-entender-então-não-se-preocupe">Essa é uma breve introdução à programação funcional que por acaso usa Elixir para exemplos, mas você não precisa saber Elixir para os entender, então não se preocupe.</h2>
+
+<hr />
+
+<h3 id="história">História</h3>
+
+<p>Programação funcional foi &ldquo;fundada&rdquo; em 1958 com Lisp por John McCarthy, e ela é um paradigma
+de programação que tem ganhado bastante fama recentemente, já que ela faz programas serem
+mais legíveis e fáceis de manter, já que ela tenta combinar computações e funções matemáticas, assim causando nenhum
+efeito colateral.</p>
+
+<p>Lisp foi <em>extremamente</em> importante para o campo do desenvolvimento de IAs, e a tecnologia provavelmente não estaria
+nesse estado se não fosse por Lisp.</p>
+
+<h4 id="cálculo-lambda">Cálculo Lambda</h4>
+
+<p>A base da PF<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> é Cálculo Lambda. Ela (calculo lambda) foi inventado por Alonzo Church
+na década de 30, e ela diz que funções devem ser representadas como caixas negras.</p>
+
+<p>Por exemplo:</p>
+
+<pre><code class="language-elixir">fn x -&gt; x * x end # Retorna o quadrado do argumento
+</code></pre>
+
+<p>This concept, normally called closures or anonymous functions in other
+programming languages, is the core of FP.</p>
+
+<p>Esse conceito é normalmente chamado de closures ou funções anônimas em outras linguagens é o arroz com feijão da FP.</p>
+
+<hr />
+
+<h3 id="map-filter-e-reduce"><em>Map</em>, <em>filter</em> e <em>reduce</em></h3>
+
+<p>Essas são funções famosas que vieram junto com Lisp, implementadas em praticamente qualquer linguagem
+de programação moderna (junto com cálculo lambda), e elas aplicam transformações em arrays ou listas.</p>
+
+<h4 id="map-aplica-uma-função-em-cada-elemento-de-uma-lista">Map - aplica uma função em cada elemento de uma lista.</h4>
+
+<pre><code class="language-elixir">Enum.map([1, 2, 3], fn x -&gt; x * x end) # retorna [1, 4, 9]
+</code></pre>
+
+<h4 id="filter-retorna-uma-lista-que-de-acordo-com-a-função-dada-é-verdadeira">Filter - retorna uma lista que, de acordo com a função dada, é verdadeira</h4>
+
+<pre><code class="language-elixir">Enum.filter([1, 2, 3, 4], fn x -&gt; if rem(x, 2) == 0 do x end) # Retorna apenas números pares, [2, 4]
+</code></pre>
+
+<h4 id="reduce-transforma-uma-lista-em-um-único-valor">Reduce - transforma uma lista em um único valor.</h4>
+
+<pre><code class="language-elixir">Enum.reduce([5, 10, 15, 20, 25], fn x, acc -&gt; x + acc end) # Retorna 75 (todos os elementos da lista somados)
+</code></pre>
+
+<hr />
+
+<h3 id="imutabilidade">Imutabilidade</h3>
+
+<p>Um dos princípios da PF é a imutabilidade, e isso significa que o valor das variáveis não muda.
+Isso é importante pois ele transforma as funções em caixas pretas
+previsíveis, que pegam um valor X e retornam Y. E, como um efeito colateral, a performance
+é melhor, já que os valores não são copiados por aí.</p>
+
+<p><img src="https://cs.wellesley.edu/~cs110/lectures/L16/images/function.png" alt="" /></p>
+
+<hr />
+
+<h3 id="funções-de-classe-alta">Funções de classe alta</h3>
+
+<p>Isso significa que funções <strong>também</strong> são tratadas como valores e elas podem ser usadas como valores;
+E isso também significa que elas podem retornar funções e receber funções como parâmetros, as tornando muito mais poderosas.</p>
+
+<hr />
+
+<h3 id="higher-order-functions">Higher order functions</h3>
+
+<p>Essas são funções que:
+- ou recebem funções como parâmetros, ou
+- retornam uma função</p>
+
+<hr />
+
+<p>Combine all that we just talked about, and you get the powerful mix that FP is!
+Thank you for reading.</p>
+
+<p>Junte tudo que acabamos de falar, e você tem a incrível e maravilhosa mistura que PF é!
+Obrigado por ler.
+```</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">PF significa Programação Funcional
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/pt/come%C3%A7ando-com-programa%C3%A7%C3%A3o/" class="left arrow">&#8592;</a>
+		<a href="/pt/monades/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019-08-10 23:32:26.709845229 -0300 -03 m=&#43;0.103193033">2019</time> Lucas Micheloni. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

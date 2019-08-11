@@ -24,6 +24,21 @@
   </url>
   
   <url>
+    <loc>https://arsukeey.github.io/pt/fp/</loc>
+    <lastmod>2019-08-10T01:10:57-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://arsukeey.github.io/fp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://arsukeey.github.io/pt/fp/"
+                />
+  </url>
+  
+  <url>
     <loc>https://arsukeey.github.io/pt/come%C3%A7ando-com-programa%C3%A7%C3%A3o/</loc>
     <lastmod>2019-07-28T01:10:57-03:00</lastmod>
   </url>

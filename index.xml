@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Functional Programming</title>
+      <link>https://arsukeey.github.io/fp/</link>
+      <pubDate>Sat, 10 Aug 2019 01:10:57 -0300</pubDate>
+      
+      <guid>https://arsukeey.github.io/fp/</guid>
+      <description>This is a short introduction to functional programming using Elixir for examples, but you don&amp;rsquo;t need to know Elixir to understand them. History So, functional programming. Started in 1958 with Lisp by John McCarthy, it is a programming paradigm that&amp;rsquo;s gaining a lot of traction recently, since it makes programs more readable and easier to maintain, since it tries to treat computations as mathematical functions, causing no side effects.</description>
+    </item>
+    
+    <item>
       <title>Monads</title>
       <link>https://arsukeey.github.io/monads/</link>
       <pubDate>Sat, 10 Aug 2019 01:10:57 -0300</pubDate>

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://arsukeey.github.io/fp/</loc>
+    <lastmod>2019-08-10T01:10:57-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://arsukeey.github.io/pt/fp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://arsukeey.github.io/fp/"
+                />
+  </url>
+  
+  <url>
     <loc>https://arsukeey.github.io/monads/</loc>
     <lastmod>2019-08-10T01:10:57-03:00</lastmod>
   </url>

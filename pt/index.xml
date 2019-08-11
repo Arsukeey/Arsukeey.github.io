@@ -25,6 +25,15 @@ Explicando bem por cima, um mônade quer dizer que algo pode retornar um valor o
     </item>
     
     <item>
+      <title>Programação Funcional</title>
+      <link>https://arsukeey.github.io/pt/fp/</link>
+      <pubDate>Sat, 10 Aug 2019 01:10:57 -0300</pubDate>
+      
+      <guid>https://arsukeey.github.io/pt/fp/</guid>
+      <description>Essa é uma breve introdução à programação funcional que por acaso usa Elixir para exemplos, mas você não precisa saber Elixir para os entender, então não se preocupe. História Programação funcional foi &amp;ldquo;fundada&amp;rdquo; em 1958 com Lisp por John McCarthy, e ela é um paradigma de programação que tem ganhado bastante fama recentemente, já que ela faz programas serem mais legíveis e fáceis de manter, já que ela tenta combinar computações e funções matemáticas, assim causando nenhum efeito colateral.</description>
+    </item>
+    
+    <item>
       <title>Aprendendo a programar</title>
       <link>https://arsukeey.github.io/pt/come%C3%A7ando-com-programa%C3%A7%C3%A3o/</link>
       <pubDate>Sun, 28 Jul 2019 01:10:57 -0300</pubDate>

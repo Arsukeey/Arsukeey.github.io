@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				Functional Programming &middot; Yet Another Programming Blog
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Yet Another Programming Blog" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Yet Another Programming Blog</h2>
+				</a>
+				<ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/">Posts</a></li>
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Lucas Micheloni
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-08-10 01:10:57 -0300 -03">August 10, 2019</time>
+</div>
+		<h1 class="post-title">Functional Programming</h1>
+<div class="post-line"></div>
+
+		
+
+		
+
+<h2 id="this-is-a-short-introduction-to-functional-programming-using-elixir-for-examples-but-you-don-t-need-to-know-elixir-to-understand-them">This is a short introduction to functional programming using Elixir for examples, but you don&rsquo;t need to know Elixir to understand them.</h2>
+
+<hr />
+
+<h3 id="history">History</h3>
+
+<p>So, functional programming. Started in 1958 with Lisp by John McCarthy, it is a
+programming paradigm that&rsquo;s gaining a lot of traction recently, since it makes programs more readable and easier to
+maintain, since it tries to treat computations as mathematical functions, causing no side effects.</p>
+
+<p>Lisp was <em>extremely</em> important to AI development, and we probably wouldn&rsquo;t be here if
+Lisp didn&rsquo;t exist.</p>
+
+<h4 id="lambda-calculus">Lambda Calculus</h4>
+
+<p>The bread and butter of FP<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> is Lambda Calculus. It was invented by Alonzo
+Church in 1930, and it consists of functions represented as black-boxes.</p>
+
+<p>An example:</p>
+
+<pre><code class="language-elixir">fn x -&gt; x * x end # Squares argument
+</code></pre>
+
+<p>This concept, normally called closures or anonymous functions in other
+programming languages, is the core of FP.</p>
+
+<hr />
+
+<h3 id="map-filter-and-reduce">Map, filter and reduce</h3>
+
+<p>Those are famous functions, implemented in almost every programming language
+(just like Lambda Calculus), and they apply transformations to arrays or lists.</p>
+
+<h4 id="map-applies-a-function-in-every-element-of-a-list">Map - applies a function in every element of a list.</h4>
+
+<pre><code class="language-elixir">Enum.map([1, 2, 3], fn x -&gt; x * x end) # returns [1, 4, 9]
+</code></pre>
+
+<h4 id="filter-returns-a-list-of-every-element-that-according-to-the-given-function-is-true">Filter - returns a list of every element that, according to the given function, is true</h4>
+
+<pre><code class="language-elixir">Enum.filter([1, 2, 3, 4], fn x -&gt; if rem(x, 2) == 0 do x end) # Returns only even numbers, [2, 4]
+</code></pre>
+
+<h4 id="reduce-transforms-a-list-in-a-single-value">Reduce - transforms a list in a single value.</h4>
+
+<pre><code class="language-elixir">Enum.reduce([5, 10, 15, 20, 25], fn x, acc -&gt; x + acc end) # Returns 75 (every element of the list summed)
+</code></pre>
+
+<hr />
+
+<h3 id="immutability">Immutability</h3>
+
+<p>One of the principles of FP is immutability, and that means that variables&rsquo; values don&rsquo;t actually vary.
+It is important because it turns functions into predictable black boxes, and as a side effect, the performance
+is better, since it doesn&rsquo;t allows copying values around.</p>
+
+<h2 id="https-cs-wellesley-edu-cs110-lectures-l16-images-function-png"><img src="https://cs.wellesley.edu/~cs110/lectures/L16/images/function.png" alt="" /></h2>
+
+<h3 id="first-class-functions">First-class functions</h3>
+
+<p>That means that functions are also treated as values and they can be used as data.
+That also means that they can return functions and receive functions as paramenters, making them a lot more powerful.</p>
+
+<hr />
+
+<h3 id="higher-order-functions">Higher-order functions</h3>
+
+<p>These are functions that either:
+- take functions as arguments, or
+- returns a function</p>
+
+<hr />
+
+<p>Combine all that we just talked about, and you get the powerful mix that FP is!
+Thank you for reading.
+```</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">FP stands for Functional Programming.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/monads/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019-08-10 23:32:26.695808194 -0300 -03 m=&#43;0.089155758">2019</time> Lucas Micheloni. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
