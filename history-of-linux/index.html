@@ -141,7 +141,7 @@ Instead, the internals should be designed in a way such that they NEED no hiding
 
 <p>Void Linux allows you to use musl instead of the more common glibc, allowing Void to be used in embedded systems. It also is the first Linux® distribution to use LibreSSL as the system crypto library by default.</p>
 
-<h3 id="nixos-and-how-it-revolutionized-packages-managament-systems">NixOS, and how it revolutionized packages managament systems</h3>
+<h3 id="nixos-and-how-it-revolutionized-package-managament-systems">NixOS, and how it revolutionized package managament systems</h3>
 
 <p>Nix, NixOS&rsquo; package manager, utilizes a purely functional approach to how software is installed. It ensures every package installed through it is in it&rsquo;s own unique directory together with it&rsquo;s dependencies, generated through a cryptographic hash.</p>
 
@@ -158,9 +158,11 @@ Instead, the internals should be designed in a way such that they NEED no hiding
 }
 </code></pre>
 
+<h4 id="atomic-upgrades">Atomic Upgrades</h4>
+
 <p>It also uses an atomic approach to upgrading. This means that if the upgrade to a new configuration is interrupted, for example, the power fails half-way through, the system will still boot fine. In other systems, the machine might end up in an inconsistent state, and may not even be able to boot anymore. <sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup></p>
 
-<h5 id="special-thanks-to-bryan-lunduke-for-his-complete-history-of-linux-abdridged-talk-which-helped-me-a-lot">Special thanks to Bryan Lunduke for his Complete History Of Linux (Abdridged) talk, which helped me a lot!</h5>
+<p><strong>Special thanks to Bryan Lunduke for his Complete History Of Linux (Abdridged) talk, which helped me a lot!</strong></p>
 <div class="footnotes">
 
 <hr />
@@ -189,7 +191,7 @@ Instead, the internals should be designed in a way such that they NEED no hiding
 
         		<footer>
 			<span>
-			&copy; <time datetime="2019-08-24 22:43:38.030417005 -0300 -03 m=&#43;0.096851958">2019</time> Lucas Micheloni. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2019-08-24 22:45:14.213335181 -0300 -03 m=&#43;0.095622214">2019</time> Lucas Micheloni. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
