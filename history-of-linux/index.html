@@ -60,7 +60,7 @@ who inspired GNU (And that&rsquo;s what made Linux useful initially).</p>
 <p>In 1969, it&rsquo;s development was started. It&rsquo;s intent was to be used by programmers
 inside AT&amp;T&rsquo;s labs, and by no means it was meant to be portable.</p>
 
-<p>It was officially announced outside of Bell Labs in 1973.[^1]</p>
+<p>It was officially announced outside of Bell Labs in 1973.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
 
 <h2 id="gnu">GNU</h2>
 
@@ -120,7 +120,9 @@ They both still exist to this day!</p>
 
 <p>Canonical Ltd. was founded in March of 2004, and has brought with it the most popular Linux® distribution, Ubuntu.</p>
 
-<p>Since I&rsquo;m talking about the modern Linux® distributions, I&rsquo;ll also talk about Arch Linux and Void Linux, two of my favorite Linux® distributions, together with NixOS.</p>
+<p>Since I&rsquo;m talking about the modern Linux® distributions, I&rsquo;ll also talk about Arch Linux, Void Linux and NixOS, which are my favorite Linux® distributions, currently.</p>
+
+<h3 id="arch-linux">Arch Linux</h3>
 
 <p>Arch Linux follows the KISS (Keep It Simple, Stupid) principle by design. It tries to focus in elegance, minimalism and simplicity. It was inspired by CRUX, another minimalist distribution, that Judd Vinet started the Arch Linux project. He chose the word because of the word &ldquo;arch-enemy&rdquo;. Vinet led the project until 1st of October of 2007, when he stepped down to name Aaron Griffin as the project&rsquo;s new leader.</p>
 
@@ -131,15 +133,47 @@ Instead, the internals should be designed in a way such that they NEED no hiding
 - Aaron Griffin
 </code></pre>
 
+<h3 id="void-linux">Void Linux</h3>
+
 <p>Void Linux is an independent Linux® distribution that uses the X Binary Package System, and uses the runit init system.</p>
 
 <p>It was created in 2008 by Juan Romero, a former NetBSD maintainer, who wanted to test out his new package manager, XBPS.</p>
 
 <p>Void Linux allows you to use musl instead of the more common glibc, allowing Void to be used in embedded systems. It also is the first Linux® distribution to use LibreSSL as the system crypto library by default.</p>
 
-<h5 id="special-thanks-to-bryan-lunduke-for-his-complete-history-of-linux-abdridged-talk-which-helped-me-a-lot">Special thanks to Bryan Lunduke for his Complete History Of Linux (Abdridged) talk, which helped me a lot!</h5>
+<h3 id="nixos-and-how-it-revolutionized-packages-managament-systems">NixOS, and how it revolutionized packages managament systems</h3>
 
-<p>[^1]:</p>
+<p>Nix, NixOS&rsquo; package manager, utilizes a purely functional approach to how software is installed. It ensures every package installed through it is in it&rsquo;s own unique directory together with it&rsquo;s dependencies, generated through a cryptographic hash.</p>
+
+<p>This system solves the old dependency hell problem in an incredibly elegant way.</p>
+
+<p>NixOS is built on top of the Nix package manager. It started in 2003 as a research project, with the Integrating Software Construction and Software Deployment<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> paper Eelco Dolstra wrote.</p>
+
+<p>One of its features is the declarative system configuration model, using the Nix domain functional build language. You configure the bootloader, configuration files, kernel and so on by using said language. e.g.:</p>
+
+<pre><code>{
+  boot.loader.grub.device = &quot;/dev/sda&quot;;
+  fileSystems.&quot;/&quot;.device = &quot;/dev/sda1&quot;;
+  services.sshd.enable = true;
+}
+</code></pre>
+
+<p>It also uses an atomic approach to upgrading. This means that if the upgrade to a new configuration is interrupted, for example, the power fails half-way through, the system will still boot fine. In other systems, the machine might end up in an inconsistent state, and may not even be able to boot anymore. <sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup></p>
+
+<h5 id="special-thanks-to-bryan-lunduke-for-his-complete-history-of-linux-abdridged-talk-which-helped-me-a-lot">Special thanks to Bryan Lunduke for his Complete History Of Linux (Abdridged) talk, which helped me a lot!</h5>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="https://www.bell-labs.com/usr/dmr/www/cacm.pdf">https://www.bell-labs.com/usr/dmr/www/cacm.pdf</a>
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2"><a href="http://nixos.org/~eelco/pubs/iscsd-scm11-final.pdf">http://nixos.org/~eelco/pubs/iscsd-scm11-final.pdf</a>
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3"><a href="http://nixos.org/~eelco/pubs/atomic-hotswup2008-final.pdf">http://nixos.org/~eelco/pubs/atomic-hotswup2008-final.pdf</a>
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+</ol>
+</div>
 
 
 		
@@ -155,7 +189,7 @@ Instead, the internals should be designed in a way such that they NEED no hiding
 
         		<footer>
 			<span>
-			&copy; <time datetime="2019-08-24 22:24:18.764044031 -0300 -03 m=&#43;0.105438447">2019</time> Lucas Micheloni. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2019-08-24 22:43:38.030417005 -0300 -03 m=&#43;0.096851958">2019</time> Lucas Micheloni. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
