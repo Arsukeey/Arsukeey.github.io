@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="Rust, functional programming, development" name="keywords">
+<meta content="Alice Micheloni" name="author">
+<meta property="og:title" content="A História do Linux - blog da alice">
+<meta property="og:url" content="https://arsukeey.github.io/pt/historia-do-linux/">
+<meta property="og:description" content="Alice&#39;s blog">
+<meta property="og:type" content="website" />
+<title>A História do Linux | blog da alice</title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<link rel="stylesheet" href="https://arsukeey.github.io/css/style.css">
+<link rel="shortcut icon" href="https://arsukeey.github.io/favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://arsukeey.github.io"><h1 class="title is-4">blog da alice</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/arsukeey" target="_blank">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/arsukeey" target="_blank">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">A História do Linux</h1>
+    <h2 class="subtitle is-5">September 20, 2019 by Alice Micheloni</h2>
+    
+    <div class="content">
+      <h1 id="a-história-completa-do-kernel-linux">A história completa do kernel Linux</h1>
+<h2 id="unix">Unix</h2>
+<p>Para falar do Linux, primeiro devemos falar do Unix,
+o sistema operacional que inspirou o projeto GNU (e foi ele que tornou Linux uma
+ferramenta útil inicialmente).</p>
+<p>Em 1969, o desenvolvimento do Unix se iniciou. Seu propósito inicial foi para
+uso dos programadores dentro dos laboratórios da AT&amp;T, e seus programadores
+originais não tinham portabilidade em mente.</p>
+<p>Unix foi anunciado para o público geral em 1973. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="gnu">GNU</h2>
+<p>O desenvolvimento da GNU iniciou-se oficialmente em 27 de Setembro de 1983,
+quando Richard Matthew Stallman enviou
+<a href="https://www.gnu.org/gnu/initial-announcement.en.html">esta</a> mensagem ao grupo
+de notícias <code>net.unix-wizards</code>.</p>
+<p>Seu plano inicial era fazer uma implementação do Unix do zero, mas dessa vez o
+distribuindo gratuitamente, já que ele queria compartilhar seu software e ele
+não podia por conta do copyright dos vendedores de software da época.</p>
+<p>Ele queria criar um conjunto de kernel, ferramentas de usuário, editor,
+compilador, etc. Do zero e licenciado com algo que eventualmente (para ser
+exata, em 1989) seria conhecido como a <em>Free Software License</em>.</p>
+<p>No dia 22 de Março de 1987, Richard Stallman (que será chamado de rms daqui em
+diante neste artigo) terminou de escrever a primeira versão do GCC, a coleção de
+compiladores da GNU.
+Ele o uploadou aos servers do MIT (onde ele estudava na época) e torceu pelo melhor.</p>
+<p>Em 1989, o único componente principal faltante da GNU era o kernel. Seu
+desenvolvimento começou em 1990, com o nome de Hurd. No entanto, Linus Torvalds,
+um estudante Finlandês de 21 anos, começou a trabalhar em um sistema operacional
+puramente por hobby. Ele se inspirou no MINIX, e quando uma versão conceitual
+foi terminada, ele enviou <a href="https://groups.google.com/group/comp.os.minix/msg/b813d52cbc5a044b">esta</a>
+mensagem ao grupo <code>comp.os.minix</code>, compartilhando seu progresso.</p>
+<p>Em Setembro de 1991, Torvalds finalmente terminou a versão 0.01 do Freax (nome
+original do que hoje chamamos de Linux, antes de ser renomeado pelo
+administrador de sistemas do servidor FTP da FUNET da época. Freax é um
+neologismo com as palavras &ldquo;Free&rdquo;, &ldquo;Freak&rdquo; e &ldquo;Unix&rdquo; (em português, Livre, Louco
+e Unix.)).</p>
+<p>Em 1992, Linux já era capaz de rodar o X Window System, e pro lado da GNU, eles
+tinham um editor de texto (Emacs (que foi usado para escrever esse artigo,
+haha)), um depurador (gdb), um gerador de parser do YACC (bison), um linker
+(ld), uma shell quase completa (Bash), um compilador otimizador portátil (gcc) e
+TeX para formatamento de texto.</p>
+<p>Então, rms pensou se ele não poderia distribuir o Linux como uma alternativa
+para o Hurd por enquanto (mal sabia ele, haha). Ele pediu encaredidamente ao
+Torvalds para ele licenciar seu kernel com a GPL (licença da GNU), e ele o fez.</p>
+<blockquote>
+<p>This kernel is (C) 1991 Linus Torvalds, but all or part of it may be redistributed provided you do the following:</p>
+<ul>
+<li>Full source is available for free.</li>
+<li>Copyright notices must be intact. Small partial excerpts may be copied without bothering with copyrights.</li>
+<li>You may not distribute this for a fee, not even &ldquo;handling&rdquo; costs.</li>
+</ul>
+</blockquote>
+<p>Como Linux é um kernel monolítico, ele cuidava dos filesystems e da memória
+sozinho. Esse era o foco principal de seu criticismo, já que em 1991 a maioria
+dos kernels eram microkernels, divididos em partes separadas.</p>
+<blockquote>
+<p>&ldquo;LINUX is obsolete;
+LINUX is a monolithic style system, this is a giant step back into the 1970s.&ldquo;`</p>
+</blockquote>
+<h2 id="as-primeiras-distribuições-linux">As primeiras Distribuições Linux</h2>
+<p>A primeira distribuição Linux funcional foi &ldquo;Boot-Root&rdquo;, criada por H. J. Lu.
+Ela foi chamada assim pois era composta de dois disquetes, um com o nome de
+&ldquo;Boot&rdquo; e o outro &ldquo;Root&rdquo;. Ela usava o Linux versão 0.12.</p>
+<p>A primeira distribuição Linux que podemos chamar de verdadeira é a Manchester
+Computing Centre Interim Linux, lançada em Fevereiro de 1992.</p>
+<p>Contudo, a primeira distribuição Linux disponível ao público geral foi o
+Yggdrasil Linux/GNU/X, Lançado oficialmente em Dezembro de 1992, que foi a
+primeira distribuição Linux a distribuir o X funcionando sem nenhuma
+pré-configuração (ela se adaptava ao hardware).</p>
+<p>Então, no dia 17 de Julho de 1993 o Slackware 1.0 por Patrick Volkerding foi lançado!</p>
+<h2 id="as-distruições-linux-quase-modernas">As distruições Linux <em>quase</em> modernas</h2>
+<p>Slackware, junto com Debian (lançado em Dezembro do mesmo ano) deram um imenso
+passo no mundo do Linux. Ambas distribuições ainda existem e são ativamente mantidas!</p>
+<p>Linux 1.0 foi lançado em Março de 1994, que foi mais de um passo psicológico do
+que um verdadeiramente psicológico.</p>
+<p>A primeira distribuição Linux comercial foi o SuSE Linux, baseada no Slackware,
+tornando Linux meio famoso na Alemanha.</p>
+<h2 id="royalties">Royalties</h2>
+<p>Em Agosto de 1994, William R. Della Croce, Jr. registrou o nome &ldquo;Linux&rdquo; e
+requeria 10% de todo o ganho que fizessem com o nome.
+Ele nem sequer entendia o que Linux era, ele apenas fez isso em uma tentativa de
+fazer dinheiro fácil.</p>
+<p>Apenas em torno de 1997 Torvalds conseguiu remover a marca legalmente, e a
+registrou em seu nome.</p>
+<h2 id="for-real-now-modern-day-linux-distributions"><em>for real now</em> Modern-day Linux® Distributions</h2>
+<p>Red Hat, Inc. foi fundada em 1993, e desde então ela tem trazido software de
+código aberto ao mundo corporacional. Ainda mais, em 1994 Marc Ewing lançou o
+Red Hat Enterprise Linux (RHEL).</p>
+<p>Canonical Ltd. foi fundada em Março de 2004, e trouxe com ela a distribuição
+Linux mais popular atualmente, Ubuntu.</p>
+<p>Since I’m talking about the modern Linux® distributions,
+I’ll also talk about Arch Linux, Void Linux and NixOS, which are my favorite Linux®
+distributions, currently.</p>
+<p>Como estou falando sobre distribuições Linux modernas, eu também vou falar sobre
+Arch Linux, Void Linux e NixOS, que são minhas distribuições Linux favoritas no
+momento que escrevo este artigo.</p>
+<h2 id="arch-linux">Arch Linux</h2>
+<p>Arch Linux segue o princípio KISS (Keep It Simple, Stupid) por design.
+Ele tem um foco em elegância, minimalismo e simplicidade. Judd Vinet foi inspirado por
+CRUX, outra distribuição Linux inspirada pelo BSD, quando ele iniciou o projeto.
+Ele escolheu este nome por conta da banda &ldquo;arch enemy&rdquo;. Vinet liderou o projeto
+até Setembro de 2007, quando ele nomeou Aaron Griffin como o novo líder do projeto.</p>
+<blockquote>
+<p>Relying on complex tools to manage and build your system is going to hurt the end users. [&hellip;]
+&ldquo;If you try to hide the complexity of the system, you&rsquo;ll end up with a more complex system&rdquo;.
+Layers of abstraction that serve to hide internals are never a good thing.
+Instead, the internals should be designed in a way such that they NEED no hiding.</p>
+<ul>
+<li>Aaron Griffin</li>
+</ul>
+</blockquote>
+<h2 id="void-linux">Void Linux</h2>
+<p>Void Linux é uma distribuição Linux independente que usa o X Binary Package
+System, e usa o sistema de init runit, ao invés do amplamente usado atualmente systemd.</p>
+<p>Ele foi criado em 2008 por Juan Romero, um ex-mantenedor do NetBSD, que queria
+testar seu novo gerenciador de pacotes, XBPS.</p>
+<p>Void Linux te permite usar musl ao invés do mais comum glibc, assim deixando o
+Void Linux trabalhar em sistemas embarcados, com menos recursos.
+Ele também foi a primeira distribuição Linux a usar LibreSSL (criado após o
+fiasco do heartbleed) como biblioteca de
+criptografia por padrão.</p>
+<h2 id="nixos-e-como-ele-mudou-os-gerenciadores-de-pacote-para-sempre">NixOS, e como ele mudou os gerenciadores de pacote para sempre</h2>
+<p>Nix, o gerenciador de pacotes do NixOS, utiliza uma abordagem puramente
+funcional para a instalação de software. Ele certifica que todo pacote instalado
+por ele fica em seu próprio diretório, junto com suas dependências, gerados por
+uma hash.</p>
+<p>Esse sistema resolve os antigos problemas de &ldquo;dependency hell&rdquo; de uma forma
+incrivelmente elegante.</p>
+<p>NixOS tem como base o gerenciador de pacotes Nix. Ele se iniciou em 2003 como um
+projeto de pesquisa, com o artigo &ldquo;Integrating Software Construction and
+Software Deployment<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>&rdquo; de Eelco Dolstra.</p>
+<p>Uma de suas características é o sistema de configuração de sistema declarativo,
+usando a linguagem de domínio de construção Nix. Você pode configurar o
+bootloader, a rede, o kernel, etc. usando a linguagem de programação Nix. e.g.:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nix" data-lang="nix">{
+  boot<span style="color:#f92672">.</span>loader<span style="color:#f92672">.</span>grub<span style="color:#f92672">.</span>device <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/dev/sda&#34;</span>;
+  fileSystems<span style="color:#f92672">.</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">.</span>device <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/dev/sda1&#34;</span>;
+  services<span style="color:#f92672">.</span>sshd<span style="color:#f92672">.</span>enable <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+}
+</code></pre></div><h3 id="atualizações-atômicas">Atualizações atômicas</h3>
+<p>Ele também usa uma abordagem atômica para atualizações. <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> Isso significa que se
+enquanto uma configuração nova estiver sendo aplicada o sistema for
+interrompido, por exemplo, com uma falha de energia, o sistema ainda irá
+funcionar perfeitamente. Em outros sistemas, a máquina poderá ser deixada em um
+estado inconsistente, onde ela pode ser até impedida de ligar em alguns casos.</p>
+<p>Muitíssimo obrigada, Bryan Lunduke, por sua palestra &ldquo;Complete History Of Linux
+(Abdridged)&quot;, que me ajudou imensamente!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.bell-labs.com/usr/dmr/www/cacm.pdf">https://www.bell-labs.com/usr/dmr/www/cacm.pdf</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="http://nixos.org/~eelco/pubs/iscsd-scm11-final.pdf">http://nixos.org/~eelco/pubs/iscsd-scm11-final.pdf</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="http://nixos.org/~eelco/pubs/atomic-hotswup2008-final.pdf">http://nixos.org/~eelco/pubs/atomic-hotswup2008-final.pdf</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br/>Alice Micheloni</p>
+  </div>
+</section>
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/tomorrow-night.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/armasm.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/c.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/diff.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/llvm.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/rust.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/shell.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/elixir.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>

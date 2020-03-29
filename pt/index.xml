@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; src=&#34;https://i.creativecommons.org/l/by/4.0/80x15.png&#34; /&gt;&lt;/a&gt;&lt;br/&gt;Alice Micheloni</copyright>
-    <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://arsukeey.github.io/pt/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A História do Linux</title>
+      <link>https://arsukeey.github.io/pt/historia-do-linux/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://arsukeey.github.io/pt/historia-do-linux/</guid>
+      <description>A história completa do kernel Linux Unix Para falar do Linux, primeiro devemos falar do Unix, o sistema operacional que inspirou o projeto GNU (e foi ele que tornou Linux uma ferramenta útil inicialmente).
+Em 1969, o desenvolvimento do Unix se iniciou. Seu propósito inicial foi para uso dos programadores dentro dos laboratórios da AT&amp;amp;T, e seus programadores originais não tinham portabilidade em mente.
+Unix foi anunciado para o público geral em 1973.</description>
+    </item>
     
     <item>
       <title>Programação Funcional</title>
