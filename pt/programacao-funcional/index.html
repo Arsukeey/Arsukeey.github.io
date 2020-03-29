@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="Rust, functional programming, development" name="keywords">
+<meta content="Alice Micheloni" name="author">
+<meta property="og:title" content="Programação Funcional - blog da alice">
+<meta property="og:url" content="https://arsukeey.github.io/pt/programacao-funcional/">
+<meta property="og:description" content="Alice&#39;s blog">
+<meta property="og:type" content="website" />
+<title>Programação Funcional | blog da alice</title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<link rel="stylesheet" href="https://arsukeey.github.io/css/style.css">
+<link rel="shortcut icon" href="https://arsukeey.github.io/favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://arsukeey.github.io"><h1 class="title is-4">blog da alice</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/arsukeey" target="_blank">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/arsukeey" target="_blank">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Programação Funcional</h1>
+    <h2 class="subtitle is-5">August 16, 2019 by Alice Micheloni</h2>
+    
+    <div class="content">
+      <h4 id="essa-é-uma-breve-introdução-à-programação-funcional-que-por-acaso-usa-elixir-para-exemplos-mas-você-não-precisa-saber-elixir-para-os-entender-então-não-se-preocupe">Essa é uma breve introdução à programação funcional que por acaso usa Elixir para exemplos, mas você não precisa saber Elixir para os entender, então não se preocupe.</h4>
+<h2 id="história">História</h2>
+<p>Programação funcional foi “fundada” em 1958 com Lisp por John McCarthy,
+e ela é um paradigma de programação que tem ganhado bastante fama recentemente,
+já que ela faz programas serem mais legíveis e fáceis de manter,
+já que ela tenta combinar computações e funções matemáticas, assim causando
+nenhum efeito colateral.</p>
+<p>Lisp foi fundamental para o campo do desenvolvimento de IAs, e a tecnologia provavelmente não estaria nesse estado se não fosse por Lisp.</p>
+<h2 id="cálculo-lambda">Cálculo Lambda</h2>
+<p>A base da PF<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> é Cálculo Lambda. Ela (calculo lambda) foi inventado por Alonzo Church na década de 30, e ela diz que funções devem ser representadas como caixas negras.</p>
+<p>Por exemplo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir"><span style="color:#75715e"># Retorna o quadrado do argumento</span>
+fn x <span style="color:#f92672">-&gt;</span> x <span style="color:#f92672">*</span> x end
+</code></pre></div><p>Esse conceito é normalmente chamado de closures ou
+funções anônimas em outras linguagens é o arroz com feijão da PF.</p>
+<h2 id="map-filter-e-reduce">Map, filter e reduce</h2>
+<p>Essas são famosas funções que foram introduzidas com Lisp, presentes em
+praticamente qualquer linguagem de programação moderna (junto com cálculo lambda), e elas
+aplicam transformações em arrays ou listas.</p>
+<p><strong>Map - aplica uma função em cada elemento de uma lista.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir"><span style="color:#75715e"># Retorna [1, 4, 9]</span>
+<span style="color:#a6e22e">Enum</span><span style="color:#f92672">.</span>map([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], fn x <span style="color:#f92672">-&gt;</span> x <span style="color:#f92672">*</span> x end)
+</code></pre></div><p><strong>Filter - retorna uma lista que, de acordo com a função dada, é verdadeira</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir"><span style="color:#75715e"># Retorna apenas números pares, [2, 4]</span>
+<span style="color:#a6e22e">Enum</span><span style="color:#f92672">.</span>filter([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>], fn x <span style="color:#f92672">-&gt;</span> if rem(x, <span style="color:#ae81ff">2</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> do x end) 
+</code></pre></div><p><strong>Reduce - transforma uma lista em um único valor.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir"><span style="color:#75715e"># Retorna 75 (todos os elementos da lista somados)</span>
+<span style="color:#a6e22e">Enum</span><span style="color:#f92672">.</span>reduce([<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">25</span>], fn x, acc <span style="color:#f92672">-&gt;</span> x <span style="color:#f92672">+</span> acc end)
+</code></pre></div><h2 id="imutabilidade">Imutabilidade</h2>
+<p>Um dos princípios da PF é a imutabilidade, e isso significa que
+o valor das variáveis não muda em nenhum momento. Isso é importante pois ele transforma
+as funções em caixas pretas previsíveis, que pegam um valor X e retornam Y. E,
+como efeito colateral, a performance é melhor, já que os valores não são copiados (pass-by-copy).</p>
+<p><img src="https://cs.wellesley.edu/~cs110/lectures/L16/images/function.png" alt="Função de caixa preta"></p>
+<h2 id="funções-de-primeira-classe">Funções de primeira classe</h2>
+<p>Isso significa que funções também são tratadas como valores e elas podem ser
+usadas como valores;
+E isso também significa que elas podem retornar funções e receber funções como
+parâmetros,
+as tornando muito mais poderosas.</p>
+<h2 id="funções-de-ordem-superior">Funções de ordem superior</h2>
+<p>Essas são funções que:</p>
+<ul>
+<li>ou recebem funções como parâmetros; ou</li>
+<li>retornam uma função</li>
+</ul>
+<hr>
+<p>Junte tudo que acabamos de falar, e você tem a incrível e maravilhosa mistura
+que PF é! Obrigada por ler este artigo.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>PF é um acrônimo de Programação Funcional. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br/>Alice Micheloni</p>
+  </div>
+</section>
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/tomorrow-night.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/armasm.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/c.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/diff.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/llvm.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/rust.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/shell.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/elixir.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>

@@ -1,50 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog de programação de Lucas Micheloni</title>
+    <title>blog da alice</title>
     <link>https://arsukeey.github.io/pt/</link>
-    <description>Recent content on Blog de programação de Lucas Micheloni</description>
+    <description>Recent content on blog da alice</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Aug 2019 23:10:57 -0300</lastBuildDate>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; src=&#34;https://i.creativecommons.org/l/by/4.0/80x15.png&#34; /&gt;&lt;/a&gt;&lt;br/&gt;Alice Micheloni</copyright>
+    <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://arsukeey.github.io/pt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Programação Funcional</title>
-      <link>https://arsukeey.github.io/pt/fp/</link>
-      <pubDate>Sat, 10 Aug 2019 23:10:57 -0300</pubDate>
+      <link>https://arsukeey.github.io/pt/programacao-funcional/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://arsukeey.github.io/pt/fp/</guid>
-      <description>Introdução ao paradigma de programação funcional</description>
-    </item>
-    
-    <item>
-      <title>Mônades</title>
-      <link>https://arsukeey.github.io/pt/monades/</link>
-      <pubDate>Sat, 10 Aug 2019 01:10:57 -0300</pubDate>
-      
-      <guid>https://arsukeey.github.io/pt/monades/</guid>
-      <description>Minha tentativa em explicar mônades</description>
+      <guid>https://arsukeey.github.io/pt/programacao-funcional/</guid>
+      <description>Essa é uma breve introdução à programação funcional que por acaso usa Elixir para exemplos, mas você não precisa saber Elixir para os entender, então não se preocupe. História Programação funcional foi “fundada” em 1958 com Lisp por John McCarthy, e ela é um paradigma de programação que tem ganhado bastante fama recentemente, já que ela faz programas serem mais legíveis e fáceis de manter, já que ela tenta combinar computações e funções matemáticas, assim causando nenhum efeito colateral.</description>
     </item>
     
     <item>
       <title>Aprendendo a programar</title>
       <link>https://arsukeey.github.io/pt/come%C3%A7ando-com-programa%C3%A7%C3%A3o/</link>
-      <pubDate>Sun, 28 Jul 2019 01:10:57 -0300</pubDate>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://arsukeey.github.io/pt/come%C3%A7ando-com-programa%C3%A7%C3%A3o/</guid>
-      <description>Como começar a programar, no meu ponto de vista.</description>
-    </item>
-    
-    <item>
-      <title>Sobre mim</title>
-      <link>https://arsukeey.github.io/pt/about/</link>
-      <pubDate>Sun, 28 Jul 2019 01:10:57 -0300</pubDate>
-      
-      <guid>https://arsukeey.github.io/pt/about/</guid>
-      <description>Prazer!</description>
+      <description>Click here to read the English version
+A Luta Talvez você já tenha escrito alguma coisinha em C++ ou BASIC, mas tá na hora de botar a mão na massa e aprender como fazer as coisas para o mundo real, e do jeito certo.
+Quando você está começando a programar, você pode ficar confuso com qual linguagem de programação você deve aprender (mesmo que você sequer tenha certeza do que elas se tratam).</description>
     </item>
     
   </channel>

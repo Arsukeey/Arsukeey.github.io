@@ -1,59 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yet Another Programming Blog</title>
+    <title>alice&#39;s blog</title>
     <link>https://arsukeey.github.io/</link>
-    <description>Recent content on Yet Another Programming Blog</description>
+    <description>Recent content on alice&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Aug 2019 14:22:00 -0300</lastBuildDate>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; src=&#34;https://i.creativecommons.org/l/by/4.0/80x15.png&#34; /&gt;&lt;/a&gt;&lt;br/&gt;Alice Micheloni</copyright>
+    <lastBuildDate>Fri, 20 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://arsukeey.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>History of Linux®</title>
+      <title>The History of Linux</title>
       <link>https://arsukeey.github.io/history-of-linux/</link>
-      <pubDate>Sat, 24 Aug 2019 14:22:00 -0300</pubDate>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://arsukeey.github.io/history-of-linux/</guid>
-      <description>The history of the most famous kernel in the world, how it ended up here, GNU&amp;rsquo;s history and its obstacles</description>
+      <description>The Complete History of Linux Unix So, to talk about Linux®, we first need to talk about Unix, the operating system who inspired GNU (And that’s what made Linux useful initially).
+In 1969, it’s development was started. It’s intent was to be used by programmers inside AT&amp;amp;T’s labs, and by no means it was meant to be portable.
+It was officially announced outside of Bell Labs in 1973.1
+GNU GNU’s development officially started in 27th September of 1983, when Richard Matthew Stallman sent this message to the net.</description>
     </item>
     
     <item>
-      <title>Functional Programming</title>
-      <link>https://arsukeey.github.io/fp/</link>
-      <pubDate>Sat, 10 Aug 2019 23:10:57 -0300</pubDate>
+      <title>What is Functional Programming?</title>
+      <link>https://arsukeey.github.io/functional-programming/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://arsukeey.github.io/fp/</guid>
-      <description>A short intro to Functional Programming and some of history and philosophy.</description>
-    </item>
-    
-    <item>
-      <title>Monads</title>
-      <link>https://arsukeey.github.io/monads/</link>
-      <pubDate>Sat, 10 Aug 2019 01:10:57 -0300</pubDate>
-      
-      <guid>https://arsukeey.github.io/monads/</guid>
-      <description>My try at explaining monads</description>
+      <guid>https://arsukeey.github.io/functional-programming/</guid>
+      <description>This is a short introduction to functional programming using Elixir for examples, but you don’t need to know Elixir to understand them.  History So, functional programming. It started in 1958 with Lisp by John McCarthy, it is a programming paradigm that’s gaining a lot of traction recently, since it makes programs more readable and easier to maintain, since it tries to treat computations as mathematical functions, causing no side effects.</description>
     </item>
     
     <item>
       <title>Getting started with Programming</title>
       <link>https://arsukeey.github.io/getting-started-with-programming/</link>
-      <pubDate>Sun, 28 Jul 2019 01:10:57 -0300</pubDate>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://arsukeey.github.io/getting-started-with-programming/</guid>
-      <description>How to start programming and some recommendations (opinionated and without bullshit)</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://arsukeey.github.io/about/</link>
-      <pubDate>Mon, 22 Jul 2019 14:00:13 -0300</pubDate>
-      
-      <guid>https://arsukeey.github.io/about/</guid>
-      <description>Nice to meet you!</description>
+      <description>Clique aqui para ler a versão em Português
+The Struggle When you are getting started with programming, you may be confused with which programming language you should learn (even though you are not even sure what those are).
+So I&amp;rsquo;ll give you some help. Stop trying to do that!
+You are spending precious time you could be studying or programming!
+Just pick whatever language you think you may like. If you have no idea of which one you should start with, I&amp;rsquo;ll give you some tips.</description>
     </item>
     
   </channel>
