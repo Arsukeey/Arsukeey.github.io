@@ -85,20 +85,18 @@ aplicam transformações em arrays ou listas.</p>
 <span style="color:#a6e22e">Enum</span><span style="color:#f92672">.</span>map([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], fn x <span style="color:#f92672">-&gt;</span> x <span style="color:#f92672">*</span> x end)
 </code></pre></div><p><strong>Filter - retorna uma lista que, de acordo com a função dada, é verdadeira</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir"><span style="color:#75715e"># Retorna apenas números pares, [2, 4]</span>
-<span style="color:#a6e22e">Enum</span><span style="color:#f92672">.</span>filter([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>], fn x <span style="color:#f92672">-&gt;</span> if rem(x, <span style="color:#ae81ff">2</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> do x end) 
+<span style="color:#a6e22e">Enum</span><span style="color:#f92672">.</span>filter([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>], fn x <span style="color:#f92672">-&gt;</span> if rem(x, <span style="color:#ae81ff">2</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> do x end)
 </code></pre></div><p><strong>Reduce - transforma uma lista em um único valor.</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir"><span style="color:#75715e"># Retorna 75 (todos os elementos da lista somados)</span>
 <span style="color:#a6e22e">Enum</span><span style="color:#f92672">.</span>reduce([<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">25</span>], fn x, acc <span style="color:#f92672">-&gt;</span> x <span style="color:#f92672">+</span> acc end)
 </code></pre></div><h2 id="imutabilidade">Imutabilidade</h2>
 <p>Um dos princípios da PF é a imutabilidade, e isso significa que
-o valor das variáveis não muda em nenhum momento. Isso é importante pois ele transforma
+o valor das variáveis em nenhum momento. Isso é importante, pois ele transforma
 as funções em caixas pretas previsíveis, que pegam um valor X e retornam Y. E,
-como efeito colateral, a performance é melhor, já que os valores não são copiados (pass-by-copy).</p>
+como efeito colateral, o desempenho é melhor, já que os valores não são copiados (pass-by-copy).</p>
 <p><img src="https://cs.wellesley.edu/~cs110/lectures/L16/images/function.png" alt="Função de caixa preta"></p>
 <h2 id="funções-de-primeira-classe">Funções de primeira classe</h2>
-<p>Isso significa que funções também são tratadas como valores e elas podem ser
-usadas como valores;
-E isso também significa que elas podem retornar funções e receber funções como
+<p>Isso significa que funções também são tratadas como valores, e isso também significa que elas podem retornar funções e receber funções como
 parâmetros,
 as tornando muito mais poderosas.</p>
 <h2 id="funções-de-ordem-superior">Funções de ordem superior</h2>
